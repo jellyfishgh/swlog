@@ -1,0 +1,25 @@
+{
+  "name": "swlog",
+  "version": "1.0.0",
+  "description": "compress/decompress and encryption/decryption of log\u001b",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellyfishgh/swlog.git"
+  },
+  "keywords": [
+    "compress",
+    "decompress",
+    "encryption",
+    "decryption"
+  ],
+  "author": "jellyfishgh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jellyfishgh/swlog/issues"
+  },
+  "homepage": "https://github.com/jellyfishgh/swlog#readme"
+}
