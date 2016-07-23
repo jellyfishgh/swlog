@@ -14,4 +14,4 @@ module.exports = {
         const out = fs.createWriteStream('input.txt.gz');
         inp.pipe(gzip).pipe(out);
     }
-}
+};

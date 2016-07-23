@@ -1,3 +1,5 @@
+import sys
+
 def encrypt(src):
 	s = ""
 	for i in xrange(len(src)):

@@ -38,3 +38,7 @@ jspm_packages
 
 # test data
 testdata
+
+# eslint & jshint
+.jshintrc
+.eslintrc.js
