@@ -10,6 +10,7 @@ function compressRouter(func, buf, cb){
 function decompressRouter(func, buf, cb){
     func(buf, (err, result) => {
         if(err) cb(err, undefined);
+        console.log(result);
         cb(undefined, result);
     });
 }
@@ -25,6 +26,7 @@ module.exports = {
             t = t % 256;
             dist += String.fromCharCode(t);
         }
+        console.log(dist);
         let buf = new Buffer(dist);
         switch(type){
         case 'deflate':

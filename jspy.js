@@ -1,7 +1,10 @@
-const zlib = require('zlib');
+const crypto = require('./crypto');
 
-const txt = 'hello';
-zlib.gzip(new Buffer(txt), {level: 9}, (err, result) => {
+crypto.encrypt('hello', 'gz', (err, result) => {
     if(err) throw err;
-    console.log(result.toString('utf-8'));
+    console.log(result.toString());
+    crypto.decrypt(result.toString(), 'gz', (err, result) => {
+        if(err) throw err;
+        console.log(result);
+    });
 });

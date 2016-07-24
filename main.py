@@ -12,5 +12,6 @@ def main():
     # src = crypto.decrypt(src);
     # print(src)
     # open('./testdata/decrypt.txt', 'w').write(src)
+    print(crypto.encrypt('hello'))
 if __name__ == '__main__':
     main()
