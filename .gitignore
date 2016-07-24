@@ -42,3 +42,6 @@ testdata
 # eslint & jshint
 .jshintrc
 .eslintrc.js
+
+# python bin
+*.pyc

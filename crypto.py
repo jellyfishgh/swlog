@@ -1,4 +1,4 @@
-import sys
+import zlib, marshal
 
 def encrypt(src):
 	s = ""
@@ -10,7 +10,9 @@ def encrypt(src):
 		t = t + m * a
 		t = t % 256
 		s += chr(t)
+	print(s)
 	encryptstr = marshal.dumps(s)
+	print(encryptstr)
 	encryptstr = zlib.compress(encryptstr, 9)
 	return encryptstr
 
